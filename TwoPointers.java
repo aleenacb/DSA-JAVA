@@ -1,11 +1,10 @@
 package DSA;
 
-//Two Pointer sum using for loop
 public class TwoPointers {
-    public static int[] TwoSum(int[] arr, int target) {
-        for(int i = 0; i < arr.length; i++) {
-            for(int j = i + 1; j < arr.length; j++) {
-                if(arr[i] + arr[j] == target) {
+    public static int[] TwoSum(int nums[], int target) {
+        for(int i = 0; i < nums.length; i++) {
+            for(int j = i + 1; j < nums.length; j++) {
+                if(nums[i] + nums[j] == target) {
                     return new int[]{i, j};
                 }
             }
@@ -13,9 +12,9 @@ public class TwoPointers {
         return new int[]{};
     }
     public static void main(String[] args) {
-        int[] arr = {2, 7, 11, 15};
-        int target = 18;
-        int[] result = TwoSum(arr, target);
-        System.out.println("Indexes : [" + result[0] + ", " + result[1]+ "]");
+        int nums[] = {2, 7, 11, 15};
+        int target = 9;
+        int[] res = TwoSum(nums, target);
+        System.out.println("Index: [" + res[0] + ", " + res[1] + "]");
     }
 }
