@@ -1,4 +1,4 @@
-package DSA;
+package Methods;
 
 public class CallingUserDefinedMethod {
     void hello() {

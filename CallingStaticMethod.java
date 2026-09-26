@@ -1,4 +1,4 @@
-package DSA;
+package Methods;
 
 class StaticMethod {
     static void hello() {
