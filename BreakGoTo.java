@@ -1,4 +1,4 @@
-package DSA;
+package Jump;
 
 public class BreakGoTo {
     public static void main(String[] args) {
